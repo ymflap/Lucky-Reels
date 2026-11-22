@@ -35,7 +35,7 @@ jobs:
         run: npm install
 
       - name: Build application
-        if: hashFiles('index.html') != '' && hashFiles('src/client/main.tsx') != ''
+        if: hashFiles('index.html') != '' && hashFiles('src/client/main.tsx') != '' && hashFiles('src/client/App.tsx') != '' && hashFiles('src/client/styles.css') != ''
         run: npm run build
 
       - name: Run tests
@@ -43,6 +43,6 @@ jobs:
         run: npm test
 
       - name: Report staged setup
-        if: hashFiles('index.html') == '' || hashFiles('src/client/main.tsx') == ''
-        run: echo "Build deferred until both index.html and src/client/main.tsx exist."
+        if: hashFiles('index.html') == '' || hashFiles('src/client/main.tsx') == '' || hashFiles('src/client/App.tsx') == '' || hashFiles('src/client/styles.css') == ''
+        run: echo "Build deferred until the HTML entry point, React entry point, App component, and stylesheet exist."
         
