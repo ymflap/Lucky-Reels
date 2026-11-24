@@ -1,18 +1,4 @@
-import SlotsGame from "./game/SlotsGame";
-
-export default function App() {
-return (
-<div className="app">
-<header className="app-header">
-<a
-className="brand"
-href="./"
-aria-label="Lucky Reels home"
->
-<span className="brand-icon" aria-hidden="true">
-★
 </span>
-<span>LUCKY REELS</span>
 </a>
 
     <span className="header-label">SLOT GAME</span>
