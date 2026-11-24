@@ -1,0 +1,78 @@
+{
+  "modelVersion": "0.1.0",
+  "status": "draft",
+  "gameId": "lucky-reels",
+  "mode": "demo",
+  "reels": 3,
+  "symbolsPerReel": 1,
+  "winCondition": "all-reels-match",
+  "selection": {
+    "mode": "weighted-random",
+    "weights": {
+      "eye-of-horus": 1,
+      "golden-scarab": 1,
+      "ankh": 1,
+      "sacred-lotus": 1,
+      "royal-gem": 1,
+      "pharaoh-crown": 1,
+      "sun-disk": 1,
+      "falcon": 1,
+      "royal-cat": 1,
+      "pyramid": 1,
+      "obelisk": 1,
+      "papyrus": 1,
+      "royal-scepter": 1,
+      "golden-coin": 1,
+      "lapis-lazuli": 1,
+      "desert-oasis": 1,
+      "temple": 1,
+      "royal-boat": 1,
+      "canopic-jar": 1,
+      "sphinx": 1
+    }
+  },
+  "payouts": {
+    "unit": "bet-multiplier",
+    "multipliers": {
+      "eye-of-horus": 10,
+      "golden-scarab": 8,
+      "ankh": 7,
+      "sacred-lotus": 6,
+      "royal-gem": 5,
+      "pharaoh-crown": 5,
+      "sun-disk": 4,
+      "falcon": 4,
+      "royal-cat": 3,
+      "pyramid": 3,
+      "obelisk": 3,
+      "papyrus": 2,
+      "royal-scepter": 2,
+      "golden-coin": 2,
+      "lapis-lazuli": 2,
+      "desert-oasis": 2,
+      "temple": 2,
+      "royal-boat": 2,
+      "canopic-jar": 2,
+      "sphinx": 2
+    }
+  },
+  "constraints": {
+    "realMoneyEnabled": false,
+    "wildSymbolsEnabled": false,
+    "scatterSymbolsEnabled": false,
+    "freeSpinsEnabled": false,
+    "jackpotEnabled": false
+  },
+  "validation": {
+    "rtpCalculated": false,
+    "simulationCompleted": false,
+    "certified": false
+  },
+  "notes": [
+    "Draft configuration for demo gameplay only.",
+    "All three reels must display the same symbol to win.",
+    "All symbols currently have equal selection weights.",
+    "Payout multipliers are illustrative and are not mathematically certified.",
+    "This JSON file documents the model; runtime code is not yet wired to load it."
+  ]
+}
